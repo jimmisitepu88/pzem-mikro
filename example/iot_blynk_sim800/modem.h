@@ -1,7 +1,7 @@
 #define BLYNK_PRINT Serial
 #define SerialAT Serial2
-#define RXD2 17
-#define TXD2 16
+#define RXD2 27
+#define TXD2 26
 
 #define TINY_GSM_MODEM_SIM800
 #include <TinyGsmClient.h>
