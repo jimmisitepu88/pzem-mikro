@@ -19,6 +19,7 @@ void loop(){
       KWHR = pzem.kwhR();KWHS = pzem.kwhS();KWHT = pzem.kwhT();
     }else{
       Serial.println("connection fail");
+      pzem.rstPZEM(); pzem.get_sensor();
     }
     
     Serial.print("IR: ");Serial.print(curIR);
