@@ -30,7 +30,7 @@ void loop(){
         KWHR = pzem.kwhR();KWHS = pzem.kwhS();KWHT = pzem.kwhT();
       }else{
         Serial.println(F("connection fail"));
-        pzem.rstPZEM();
+        pzem.rstPZEM(); pzem.get_sensor();
       }
       print_data(); 
       postHTTPS();    
